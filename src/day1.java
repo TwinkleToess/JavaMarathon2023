@@ -3,3 +3,4 @@ public class day1 {
         System.out.println("qq_alla");
     }
 }
+
