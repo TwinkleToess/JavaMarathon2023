@@ -9,44 +9,43 @@ public class ClassesAndObjects {
         Scanner scanner = new Scanner(System.in);
         Person person1 = new Person();
         Person person2 = new Person();
+
+        person1.setName("Somename", 15);
         System.out.println("Введите имя и возраст первого человека... ");
         person1.setName(scanner.next(), scanner.nextInt());
+
         System.out.println("Введите имя и возраст второго человека... ");
         person2.setName(scanner.next(), scanner.nextInt());
-        int year1 = person1.calculateYearsToRetirement();
-        int year2 = person2.calculateYearsToRetirement();
-        person1.speak();
-        System.out.println(year1+" "+year2);
-        person2.speak();
-    }
-}
 
-class Person{
-    private String name;
-    private int age;
+        System.out.println(person1.getAge() +" "+person2.getName());
 
-    public void setName(String username, int userage){
-        name = username;
-        age = userage;
     }
 
-    public String getName(){
-        return name;
-    }
-    public int getAge(){
-        return age;
-    }
+    static class Person {
+        private String name;
+        private int age;
 
-    int calculateYearsToRetirement(){
-        int years = 65 - age;
-        return years;
-    }
-    void speak(){
-        for(int i = 0; i<1; i++) {
-            System.out.println("Меня зовут " + name + " и мне " + age + " лет");
+        public void setName(String username, int userage) {
+            if (username.isEmpty()) {
+                System.out.println("Введите все требуемые значения!");
+            } else {
+                name = username;
+                age = userage;
+            }
         }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAge() {
+            return age;
+        }
+
+        void sayHello() {
+            System.out.println("Привет");
+        }
+
     }
-    void sayHello(){
-        System.out.println("Привет");
-    }
+
 }
