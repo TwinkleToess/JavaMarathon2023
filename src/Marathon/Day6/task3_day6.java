@@ -46,7 +46,7 @@ class Teacher{
         this("Евгения","Английский язык");
     }
 
-    void evaluate(Student studentName){
+    public void evaluate(Student studentName){
         Random rand = new Random();
         String mark = switch (rand.nextInt(4) + 2) {
             case 2 -> "неудовлетворительно";

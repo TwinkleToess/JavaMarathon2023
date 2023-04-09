@@ -49,35 +49,35 @@ public class task1_day6 {
         private int year;
 
 
-        void setModel(String model) {
+        public void setModel(String model) {
             this.model = model;
         }
 
-        void setColor(String color) {
+        public void setColor(String color) {
             this.color = color;
         }
 
-        void setYear(int year) {
+        public void setYear(int year) {
             this.year = year;
         }
 
-        void info() {
+        public void info() {
             System.out.println("Это автомобиль");
         }
 
-        int yearDifference(int inputYear) {
+        public int yearDifference(int inputYear) {
             return inputYear - year;
         }
 
-        String getColor() {
+        public String getColor() {
             return color;
         }
 
-        String getModel() {
+        public String getModel() {
             return model;
         }
 
-        int getYear() {
+        public int getYear() {
             return year;
         }
 
@@ -95,23 +95,23 @@ public class task1_day6 {
             this.year = year;
         }
 
-        void info() {
+        public void info() {
             System.out.println("Это мотоцикл");
         }
 
-        int yearDifference(int inputYear) {
+        public int yearDifference(int inputYear) {
             return inputYear - year;
         }
 
-        String getModel() {
+        public String getModel() {
             return model;
         }
 
-        String getColor() {
+        public String getColor() {
             return color;
         }
 
-        int getYear() {
+        public int getYear() {
             return year;
         }
     }
@@ -134,28 +134,28 @@ public class task1_day6 {
             this.length = length;
         }
 
-        protected void info() {
+        public void info() {
             System.out.println("Изготовитель: " + manufacturer + " , год выпуска: " + year + " , длина: " + length +
                     ", вес: " + weight + ", количество топлива в баке:" + fuel);
         }
 
-        protected void fullUp(int n) {
+        public void fullUp(int n) {
             this.fuel += n;
         }
 
-        protected void setManufacturer(String manufacturer) {
+        public void setManufacturer(String manufacturer) {
             this.manufacturer = manufacturer;
         }
 
-        protected void setYear(int year) {
+        public void setYear(int year) {
             this.year = year;
         }
 
-        protected void setLength(int length) {
+        public void setLength(int length) {
             this.length = length;
         }
 
-        void setWeight(int weight) {
+        public  void setWeight(int weight) {
             this.weight = weight;
         }
     }
