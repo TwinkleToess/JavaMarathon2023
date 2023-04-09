@@ -23,30 +23,27 @@ class Car{
     private String color;
     private int year;
 
-    void setModel(String model){
+    public void setModel(String model){
         this.model=model;
     }
-    void setColor(String color){
+    public void setColor(String color){
         this.color=color;
     }
-    void setYear(int year){
+    public void setYear(int year){
         this.year=year;
     }
 
-    String getColor(){
+    public String getColor(){
         return color;
     }
-    String getModel(){
+    public String getModel(){
         return model;
     }
-    int getYear(){
+    public int getYear(){
         return year;
     }
 }
-
 //==================TASK 2==================//
-
-
 
 class Motorbike{
     private String model;
@@ -58,13 +55,14 @@ class Motorbike{
         this.color=color;
         this.year=year;
     }
-    String getModel(){
+    public String getModel(){
         return model;
     }
-    String getColor(){
+    public String getColor(){
         return color;
     }
-    int getYear(){
+    public int getYear(){
         return year;
     }
 }
+
