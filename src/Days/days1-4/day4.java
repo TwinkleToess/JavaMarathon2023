@@ -19,14 +19,14 @@ public class day4 {
             massive[x] = rand.nextInt(11);
             if(massive[x] > 8){
                 m8 +=1;
-            } else if (massive[x]==1) {
+            }
+            if (massive[x]==1) {
                 m1 +=1;
             }
             if((massive[x]%2)==0){
                 del2 +=1;
             } else {nodel2+=1;}
             summ += massive[x];
-            ;
             System.out.println(massive[x]);
         }
         System.out.println(Arrays.toString(massive));
