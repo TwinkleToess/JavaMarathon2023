@@ -2,7 +2,7 @@ public class this_keyword {
 
     public static void main(String[] args) {
 
-        Human human1 = new Human();
+        Human2 human1 = new Human2();
         human1.setName("Кирилл");
         human1.setAge(12);
         human1.getInfo();
@@ -10,7 +10,7 @@ public class this_keyword {
     }
 }
 
-class Human{
+class Human2{
     String name;
     int age;
 
